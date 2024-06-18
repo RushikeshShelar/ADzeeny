@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body{
-  background-color: black;
+  overflow-x: hidden;
 }
 
 @layer base {
