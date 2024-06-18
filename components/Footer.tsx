@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import Button from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ChevronLeft, ChevronRight, Mail, MapPinned, Phone } from "lucide-react";
 import Image from "next/image";
@@ -78,7 +78,7 @@ const Footer = () => {
                 </div>
 
                 <div id="newsletter" className="px-5 flex flex-col gap-6 mb-10" >
-                <div className="text-sm font-semibold text-center">
+                    <div className="text-sm font-semibold text-center">
                         <span className="text-xs font-thin text-gray-600 pr-1">
                             ---------------
                         </span>
@@ -89,7 +89,7 @@ const Footer = () => {
                     </div>
                     <div className="flex flex-col gap-2">
                         <Input placeholder="Your Email Address..." className="placeholder:text-gray-400" />
-                        <Button variant="outline" className="w-full rounded-none outline outline-cyan-300 outline-[0.1px] bg-transparent">REQUEST BROCHURE</Button>
+                        <Button label=" REQUEST BROCHURE" />
                         <div className="text-sm text-gray-300 mt-1">
                             Get details information about our services.
                         </div>
