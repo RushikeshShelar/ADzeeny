@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ADZEENY | Make Your Brand Digital",
-  description: "Ypur Advertising Genie",
+  description: "Your Advertising Genie",
 };
 
 export default function RootLayout({
