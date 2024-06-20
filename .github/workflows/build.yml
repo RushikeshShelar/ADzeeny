@@ -23,3 +23,17 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Deploy to EC2 Optional
+      # - name: Deploy to EC2 Instance
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     host: ${{ secrets.SSH_HOST }}
+      #     username: ${{ secrets.SSH_USERNAME }}
+      #     key: ${{ secrets.SSH_KEY }}
+      #     script: |
+      #        sudo docker pull rushikeshshelar/adzeeny:latest
+      #        sudo docker stop adzeeny || true
+      #        sudo docker rm adzeeny || true
+      #        sudo docker run -d --name adzeeny -p 3000:3000 rushikeshshelar/adzeeny:latest
+
+
