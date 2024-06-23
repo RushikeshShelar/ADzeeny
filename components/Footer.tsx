@@ -68,7 +68,7 @@ const Footer = () => {
                             <span className="text-xs font-thin text-gray-600 pl-1 md:hidden">
                                 -------------------
                             </span>
-                            <span className="border border-dashed w-1/2 h-0 my-auto" />
+                            <span className="border border-dashed w-1/2 h-0 my-auto hidden md:block" />
 
                         </div>
                         <div className="mb-6 flex flex-col gap-3 md:gap-6 " >
@@ -87,13 +87,13 @@ const Footer = () => {
                     <div id="newsletter" className="px-5 flex flex-col gap-6 mb-10  md:text-base tracking-wider md:font-normal" >
                         <div className="text-sm font-semibold text-center tracking-wider md:flex md:gap-2">
                             <span className="text-xs font-thin text-gray-600 pr-1 md:hidden">
-                                ---------------
+                                ------------
                             </span>
                             GET DETAILED BROCHURE
                             <span className="text-xs font-thin text-gray-600 pl-1 md:hidden">
-                                ---------------
+                                ------------
                             </span>
-                            <span className="border border-dashed w-1/3 h-0 my-auto" />
+                            <span className="border border-dashed w-1/3 h-0 my-auto hidden md:block" />
                         </div>
                         <div className="flex flex-col gap-2 md:gap-4">
                             <Input placeholder="Your Email Address..." className="placeholder:text-gray-400" />
