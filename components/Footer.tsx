@@ -112,7 +112,7 @@ const Footer = () => {
                         </span>
                     </div>
                     <span className="w-[80vw] mx-auto border hidden md:block border-dashed"></span>
-                    <div className="flex flex-col w-2/3  m-auto text-xs gap-4 text-gray-300 py-5 md:flex-row md:justify-between md:w-[80vw] md:text-base md:text-muted-foreground">
+                    <div className="flex flex-col w-2/3  m-auto text-xs gap-4 text-gray-300 py-5 md:flex-row md:justify-between md:w-[80vw] md:text-sm">
                         <div className="flex items-center justify-center gap-2">
                             <div className="flex">
                                 <ChevronRight size={20} /> <span>Terms of Use</span>
