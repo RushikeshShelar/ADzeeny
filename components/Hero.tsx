@@ -47,8 +47,8 @@ const Hero = () => {
             </div>
 
 
-            <main className="gap-0">
-                <div className="w-full h-screen flex flex-col mt-52 justify-center md:justify-start items-center px-10 md:px-20">
+            <main className="">
+                <div className="w-full h-screen flex flex-col mt-20 justify-center md:justify-start items-center px-10 md:px-20   ">
                     <div className="h-3/4 flex flex-col justify-center items-center text-center md:text-start gap-6 md:flex-row md:gap-x-20">
                         {/*TODO: LOGO HERE  */}
                         {/* <Image
@@ -76,7 +76,7 @@ const Hero = () => {
                         </div>
 
 
-                        <div className="mt-10 md:mt-0 relative h-[30rem] w-[35rem]">
+                        <div className="mt-10 md:mt-0 relative md:h-[30rem] md:w-[35rem] w-80 h-40 md:block hidden">
                             <Image
                                 src={'/main.jpg'}
                                 alt="Landing page image"
@@ -84,26 +84,35 @@ const Hero = () => {
                             />
                         </div>
 
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-3 w-full  dark:bg-black-100">
-                        {properties.map((item, index) => (
-                            <div className={`h-44 flex flex-col items-center justify-center tracking-wide text-white gap-6 ${index % 2 === 0 ? 'bg-[#22143D]' : 'bg-[#2F2248]'} `} key={index}>
-                                <div className="relative h-16 w-16">
-                                    <Image
-                                        src={`${item.src}`}
-                                        alt="QA"
-                                        fill
-                                    />
-                                </div>
-                                <div>
-                                    {item.label}
-                                </div>
-                            </div>
-                        ))}
+                        <div className="mt-10 md:mt-0 md:hidden">
+                            <Image
+                                src={'/main.jpg'}
+                                alt="Landing page image"
+                                height={800}
+                                width={800}
+                            />
+                        </div>
 
                     </div>
+
                 </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-3 w-full  dark:bg-black-100">
+                    {properties.map((item, index) => (
+                        <div className={`h-44 flex flex-col items-center justify-center tracking-wide mx-10 md:m-0 text-white gap-6 ${index % 2 === 0 ? 'bg-[#22143D]' : 'bg-[#2F2248]'} overflow-hidden `} key={index}>
+                            <div className="relative h-16 w-16">
+                                <Image
+                                    src={`${item.src}`}
+                                    alt="QA"
+                                    fill
+                                />
+                            </div>
+                            <div>
+                                {item.label}
+                            </div>
+                        </div>
+                    ))}
 
+                </div>
 
             </main>
         </>
