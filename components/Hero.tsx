@@ -1,51 +1,20 @@
 import Image from "next/image";
 
 import { TextGenerateEffect } from "@/components/ui/textGenerateEffect";
+
 import Button from "@/components/ui/button";
-import { Spotlight } from "@/components/ui/spotlight";
+import { HomeSpotlights } from "@/components/ui/home-spotlights";
+import { GridBackground } from "@/components/ui/grid-bg";
 
 const Hero = () => {
-    const properties = [
-        {
-            src: "/quality.png",
-            alt: "Quality Assurance",
-            label: "Quality Assurance"
-        },
-        {
-            src: "/pricing.png",
-            alt: "Competetive Pricing",
-            label: "Competetive Pricing"
-        },
-        {
-            src: "/team.png",
-            alt: "Experienced Team",
-            label: "Experienced Team"
-        },
-        {
-            src: "/support.png",
-            alt: "Excellent Support",
-            label: "Excellent Support"
-        },
-    ];
+
     return (
         <>
             {/* Adding Spotlight Here */}
-            <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-10 h-screen" fill="white" />
-            {/* <Spotlight className="top-10 left-[30rem] h-[80vh] w-[50vw]" fill="purple" /> */}
-            <Spotlight className="top-28 md:left-60 h-[80vh]" fill="#ED3A85" />
-            <Spotlight className="top-10 md:left-56 md:-top-10 h-[80vh] w-[50vw] hidden md:block" fill="blue" />
-
-
-
-
-
+            <HomeSpotlights />
 
             {/* GRID BACKGROUND */}
-            <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0 z-[-1]">
-                {/* Radial gradient for the container to give a faded look */}
-                <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-            </div>
-
+            <GridBackground />
 
             <main className="gap-0">
                 <div className="w-full h-screen flex flex-col mt-10 md:pt-60 justify-center md:justify-start items-center px-10 md:px-20   ">
@@ -95,22 +64,7 @@ const Hero = () => {
 
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[85vw] mx-auto dark:bg-black-100">
-                    {properties.map((item, index) => (
-                        <div className={`h-44 w-1/ flex flex-col items-center justify-center tracking-wide mx-10 md:m-0 text-white gap-6 ${index % 2 === 0 ? 'bg-[#22143D]' : 'bg-[#2F2248]'} overflow-hidden `} key={index}>
-                            <div className="relative h-16 w-16">
-                                <Image
-                                    src={`${item.src}`}
-                                    alt="QA"
-                                    fill
-                                />
-                            </div>
-                            <div>
-                                {item.label}
-                            </div>
-                        </div>
-                    ))}
-                </div>
+
             </main>
         </>
     );
