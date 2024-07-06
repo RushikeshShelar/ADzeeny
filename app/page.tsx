@@ -1,8 +1,10 @@
-import Image from "next/image";
-import Footer from "@/components/Footer";
+
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import { Services } from "@/components/Services";
+import Services from "@/components/Services";
+import Portfolio from "@/components/Portfolio";
+import Footer from "@/components/Footer";
+
 
 
 export default function Home() {
@@ -11,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
+      <Portfolio />
       <Footer />
 
 
