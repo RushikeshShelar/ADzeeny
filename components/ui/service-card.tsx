@@ -14,8 +14,6 @@ interface ServiceCardProps {
     title: string;
     description: string;
     bodyImageUrl: string;
-    imageW?: number;
-    imageH?: number;
 }
 
 export const ServiceCard = ({
@@ -23,11 +21,10 @@ export const ServiceCard = ({
     title,
     description,
     bodyImageUrl,
-    imageH,
-    imageW
+
 }: ServiceCardProps) => {
     return (
-        <Card className="flex flex-col items-center space-y-4 m-6">
+        <Card className="flex flex-col items-center space-y-4 m-3 justify-center">
             <CardHeader className="flex flex-col items-center space-y-4">
                 <Image
                     src={headImageSrc}
@@ -36,7 +33,7 @@ export const ServiceCard = ({
                     alt="ServicesImage"
                     className=""
                 />
-                <CardTitle className="font-bold tracking-wide text-2xl">
+                <CardTitle className="font-bold tracking-wide text-2xl w-full">
                     {title}
                 </CardTitle>
                 <CardDescription className="font-semibold">
