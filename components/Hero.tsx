@@ -5,6 +5,7 @@ import { TextGenerateEffect } from "@/components/ui/textGenerateEffect";
 import Button from "@/components/ui/button";
 import { HomeSpotlights } from "@/components/ui/home-spotlights";
 import { GridBackground } from "@/components/ui/grid-bg";
+import { RiseUp } from "@/components/ui/rise-up";
 
 const Hero = () => {
 
@@ -39,8 +40,12 @@ const Hero = () => {
                                 /> */}
                             </div>
                             <div className="flex flex-col gap-3 md:flex-row">
-                                <Button label="Get a Free Quote" />
-                                <Button label="Our Services" variant="default" />
+                                <RiseUp hoverY={-2}>
+                                    <Button label="Get a Free Quote" />
+                                </RiseUp>
+                                <RiseUp hoverY={-2}>
+                                    <Button label="Our Services" variant="default" />
+                                </RiseUp>
                             </div>
                         </div>
 

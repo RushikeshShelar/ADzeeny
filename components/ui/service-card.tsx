@@ -33,7 +33,7 @@ export const ServiceCard = ({
                     alt="ServicesImage"
                     className=""
                 />
-                <CardTitle className="font-bold tracking-wide text-2xl w-full">
+                <CardTitle className="font-bold tracking-wide text-2xl w-full line-clamp-1">
                     {title}
                 </CardTitle>
                 <CardDescription className="font-semibold">
