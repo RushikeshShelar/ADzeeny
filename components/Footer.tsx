@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
 
     return (
-        <footer className="w-full text-white mt-10 bg-black pt-10" id="contact" >
+        <footer className="w-full text-white bg-black pt-10" id="contact" >
             {/* <div className="h-14 bg-red-100 sticky top-0"></div> */}
             <div className="m-auto lg:w-full">
                 <div className="flex flex-col md:flex-row md:px-40 md:justify-between ">
@@ -85,7 +85,7 @@ const Footer = () => {
                     </div>
 
                     <div id="newsletter" className="px-5 flex flex-col gap-6 mb-10  md:text-base tracking-wider md:font-normal" >
-                        <div className="text-sm font-semibold text-center tracking-wider md:flex md:gap-2">
+                        <div className="text-sm font-semibold text-center tracking-wide md:flex md:gap-2">
                             <span className="text-xs font-thin text-gray-600 pr-1 md:hidden">
                                 ------------
                             </span>

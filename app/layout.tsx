@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const playFair = Playfair_Display({
+  subsets:["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"]
+})
 
 export const metadata: Metadata = {
   title: "ADZEENY | Make Your Brand Digital",
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={playFair.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

@@ -10,7 +10,7 @@ export const Heading = ({
     className,
 }: HeadingProps) => {
     return (
-        <div className={cn(className, "h-full w-full text-center font-bold text-sm md:text-lg tracking-wide")} >
+        <div className={cn("h-full w-full text-center font-bold text-sm md:text-lg tracking-wide", className)} >
             {label}
         </div >
     )
