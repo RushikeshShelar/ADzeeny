@@ -41,10 +41,10 @@ const Hero = () => {
                             </div>
                             <div className="flex flex-col gap-3 md:flex-row">
                                 <RiseUp hoverY={-2}>
-                                    <Button label="Get a Free Quote" />
+                                    <Button label="Get a Free Quote" classname="w-full" />
                                 </RiseUp>
                                 <RiseUp hoverY={-2}>
-                                    <Button label="Our Services" variant="default" />
+                                    <Button label="Our Services" variant="default" classname="w-full" />
                                 </RiseUp>
                             </div>
                         </div>
