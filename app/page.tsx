@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import Footer from "@/components/Footer";
+import WorkProcess from "@/components/work-process";
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Portfolio />
+      <WorkProcess />
       <Footer />
 
 
