@@ -62,11 +62,11 @@ const Footer = () => {
                     <div id="info" className="flex flex-col px-5 gap-6 mb-12">
                         <div className="text-sm font-semibold text-center tracking-wider md:flex md:gap-2 ">
                             <span className="text-xs font-thin text-gray-600 pr-1 md:hidden">
-                                -------------------
+                                ----------------
                             </span>
                             CONTACT INFO
                             <span className="text-xs font-thin text-gray-600 pl-1 md:hidden">
-                                -------------------
+                                ----------------
                             </span>
                             <span className="border border-dashed w-1/2 h-0 my-auto hidden md:block" />
 
