@@ -23,7 +23,7 @@ export const StepCard : React.FC<StepCardProps>= ({
                         fill
                     />
                 </div>
-                <div className="text-xl font-extrabold">
+                <div className="text-6xl font-extrabold neon-number">
                     {step}
                 </div>
             </div>

@@ -13,17 +13,17 @@ const navItems = [
     },
     {
         name: 'About',
-        link: '/about',
+        link: '#about',
         icon: <BiInfoCircle/>
     },
     {
         name: 'Services',
-        link: '/service',
+        link: '#service',
         icon: <LuLayoutDashboard />
     },
     {
         name: 'Portfolio',
-        link: '/portfolio',
+        link: '#portfolio',
         icon: <GoProject />
     },
     {
