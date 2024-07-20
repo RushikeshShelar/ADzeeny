@@ -26,6 +26,9 @@ const config = {
       },
     },
     extend: {
+      boxShadow:{
+        'temp':  '15px 15px 0 0 #ED3A85'
+      },
       colors: {
         black: {
           DEFAULT: "#000",
