@@ -9,6 +9,17 @@ body{
   width: 100vw;
 }
 
+.neon-number { /* Adjust font size as needed */
+  color: transparent; /* Makes the fill color transparent */
+  -webkit-text-stroke-width: 1px; /* Width of the stroke */
+  -webkit-text-stroke-color: cyan;
+}
+.neon-number-adzeeny{ /* Adjust font size as needed */
+  color: transparent; /* Makes the fill color transparent */
+  -webkit-text-stroke-width: 1px; /* Width of the stroke */
+  -webkit-text-stroke-color: #ED3A85;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -40,6 +51,7 @@ body{
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
   }
 
   .dark {
